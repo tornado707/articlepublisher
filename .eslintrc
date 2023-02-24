@@ -1,0 +1,8 @@
+{	
+	"parserOptions": {
+		"emcmaVersion": 6
+	},
+	"env": {
+		"es6": true
+	}
+}

@@ -1,0 +1,20 @@
+<h1>Edit Article</h1>
+<form (ngSubmit)="update()" novalidate>
+	<div>
+		<label for="title"> Title </label>
+		<div>
+			<input type="text" name="title" placeholder="Title" required [(ngModel)] = "article.title">
+		</div>
+	</div>
+	<div>
+		<label for="content">Content</label>
+		<div>
+			<textarea type="text" required cols="30" rows="10" [(ngModel)] = "article.content" name="content" placeholder="Content"></textarea>
+		</div>
+	</div>
+	<div>
+		<input type="submit" value="Update">
+	</div>
+
+	<strong>{{errorMessage}}</strong>
+</form>
